@@ -1,0 +1,129 @@
+.left-menu .ant-menu-item-selected {
+    background-color: #616e84 !important;
+    color: #ffffff !important;
+}
+
+.left-menu .ant-menu-sub {
+    margin-left: 10px !important;
+}
+
+.left-menu .ant-menu-item .logo {
+    transition: all 0.3s ease;
+}
+
+.left-menu .ant-menu-item .logo.logo-close {
+    margin-inline: -7px 0px !important;
+    margin-block: 0px -7px;
+    transition: all 0.3s ease;
+    transform: translate(-7px, -5px) scale(0.8);
+}
+
+.left-menu .ant-menu-submenu-selected > .ant-menu-submenu-title {
+    color: #ffffff !important;
+}
+
+/* размер текста в пунктах и подпуктах меню и их сдвиг от левой стороны*/
+.left-menu .ant-menu-item:not(:first-child),
+.left-menu .ant-menu-submenu-title {
+    font-size: large !important;
+    padding-left: 10px !important;
+    height: auto !important;
+}
+
+.left-menu .ant-menu-item:first-child {
+    height: auto !important;
+}
+
+.left-menu .ant-menu-submenu-title,
+.left-menu .ant-menu-item {
+    padding-inline: 12px 34px !important;
+}
+
+/* размер картинки в пунктах и подпуктах меню*/
+.left-menu .ant-menu-item svg,
+.left-menu .ant-menu-submenu-title svg {
+    font-size: large !important;
+}
+
+/* цвета пунктов, подпунктов меню при наведение*/
+.left-menu .ant-menu-item:hover,
+.left-menu .ant-menu-submenu-title:hover {
+    background-color: #424d60 !important;
+    color: #ffffff !important;
+}
+/*размер заголовка основного над меню ITVECTURA и текста под ним*/
+.left-menu .nav-header-title {
+    padding-left: 0 !important;
+    padding-top: 0 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-left: 5px;
+
+    & strong,
+    & small {
+        display: flex;
+        align-items: center;
+        height: 30px;
+    }
+}
+/* иконки открытия плиток у submenu*/
+.left-menu .icon-span-menu-open_pazzle {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    :hover {
+        color: rgb(255, 255, 255) !important;
+    }
+}
+
+/* размещает иконки словаря и submenu посередине  если меню свернуто*/
+.ant-menu-inline-collapsed div svg,
+.ant-menu-inline-collapsed .icon-dicts {
+    position: relative;
+    left: 50%;
+    top: 50%;
+}
+
+.ant-menu-inline-collapsed div span.anticon svg {
+    left: 0;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 50px;
+    background-color: #00b2ff;
+}
+
+.logo-container {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    line-height: 1.5;
+    padding: 5px 0 5px 0;
+    transition: all 0.3s ease;
+}
+
+.logo-title {
+    width: 170px;
+    height: 20px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.logo-description {
+    width: 170px;
+}
+.overview {
+    color: white;
+    :hover {
+        background-color: transparent;
+        color: white;
+    }
+}
